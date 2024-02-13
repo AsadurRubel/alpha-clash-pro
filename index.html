@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Clash Pro</title>
+    <!-- Daisy & Tailwind Css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <main
+      class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center">
+
+
+      <!-- Home Section -->
+      <section class="home text-white flex flex-col items-center justify-center min-h-screen gap-10 ">
+        <h1 class="text-8xl uppercase font-anton">Alphabet Clash</h1>
+        <p class="text-2xl">
+          Unleash your Keyboard Kung Fu: Press 'Enter' to Play
+        </p>
+        <button class="btn text-black font-semibold ">Play Now</button>
+      </section>
+
+
+      <!-- Play Ground Section -->
+      <section class="play-ground hidden">
+        <div class="flex flex-col justify-center    
+            items-center  gap-10 pt-10">
+          <div
+            class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] border-[20px] border-[#010313CC] rounded-b-2xl">
+            <div class="flex justify-center">
+              <p
+                class="text-2xl font-medium bg-[#2F2941] px-6 rounded-b-xl text-white w-6/12 p-4 flex justify-center">
+                Don't watch keyboard while playing...
+              </p>
+            </div>
+            <p class="text-8xl font-bold flex justify-center">Y</p>
+          </div>
+        
+         <!-- Key Board -->
+         <div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+         </div>
+         <!-- Button -->
+         <div class="flex justify-between w-8/12">
+          <button class="btn bg-[#894189] text-white rounded-full">
+            Life
+            <img src="./images/Heart.svg" alt="Heart">
+            <span>1</span>
+          </button>
+          <button class="btn bg-[#360490] text-white rounded-full">
+            Score
+            <img src="./images/Dolar.svg" alt="Dolar">
+            <span>1</span>
+          </button>
+         </div>
+        </div>
+      </section>
+
+
+      <!-- Score Section -->
+      <section class="score flex  justify-center items-center min-h-screen hidden">
+        <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-6 rounded-2xl">
+            <h1 class="text-8xl">
+                <span class="font-extrabold">Score :</span>
+                <span>14</span>
+            </h1>
+            <button class="btn px-8 text-2xl font-semibold">Play Again</button>
+            <p class="text-xl font-medium">Practice will make you Pro</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
