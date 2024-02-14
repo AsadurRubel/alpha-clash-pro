@@ -16,17 +16,17 @@
 
 
       <!-- Home Section -->
-      <section class="home text-white flex flex-col items-center justify-center min-h-screen gap-10 ">
+      <section id="home-screen" class="text-white flex flex-col items-center justify-center min-h-screen gap-10 ">
         <h1 class="text-8xl uppercase font-anton">Alphabet Clash</h1>
         <p class="text-2xl">
           Unleash your Keyboard Kung Fu: Press 'Enter' to Play
         </p>
-        <button class="btn text-black font-semibold ">Play Now</button>
+        <button onclick="play()" class="btn text-black font-semibold ">Play Now</button>
       </section>
 
 
       <!-- Play Ground Section -->
-      <section class="play-ground hidden">
+      <section id="play-ground" class=" hidden">
         <div class="flex flex-col justify-center    
             items-center  gap-10 pt-10">
           <div
@@ -37,43 +37,43 @@
                 Don't watch keyboard while playing...
               </p>
             </div>
-            <p class="text-8xl font-bold flex justify-center">Y</p>
+            <p id="current-alphabet" class="text-8xl font-bold flex justify-center font-bold uppercase">Y</p>
           </div>
         
          <!-- Key Board -->
          <div>
           <div class="flex justify-center gap-1 my-1 w-full">
-            <kbd class="kbd">q</kbd>
-            <kbd class="kbd">w</kbd>
-            <kbd class="kbd">e</kbd>
-            <kbd class="kbd">r</kbd>
-            <kbd class="kbd">t</kbd>
-            <kbd class="kbd">y</kbd>
-            <kbd class="kbd">u</kbd>
-            <kbd class="kbd">i</kbd>
-            <kbd class="kbd">o</kbd>
-            <kbd class="kbd">p</kbd>
+            <kbd id="q" class="kbd uppercase">q</kbd>
+            <kbd id="w" class="kbd uppercase">w</kbd>
+            <kbd id="e" class="kbd uppercase">e</kbd>
+            <kbd id="r" class="kbd uppercase">r</kbd>
+            <kbd id="t" class="kbd uppercase">t</kbd>
+            <kbd id="y" class="kbd uppercase">y</kbd>
+            <kbd id="u" class="kbd uppercase">u</kbd>
+            <kbd id="i" class="kbd uppercase">i</kbd>
+            <kbd id="o" class="kbd uppercase">o</kbd>
+            <kbd id="p" class="kbd uppercase">p</kbd>
           </div>
           <div class="flex justify-center gap-1 my-1 w-full">
-            <kbd class="kbd">a</kbd>
-            <kbd class="kbd">s</kbd>
-            <kbd class="kbd">d</kbd>
-            <kbd class="kbd">f</kbd>
-            <kbd class="kbd">g</kbd>
-            <kbd class="kbd">h</kbd>
-            <kbd class="kbd">j</kbd>
-            <kbd class="kbd">k</kbd>
-            <kbd class="kbd">l</kbd>
+            <kbd id="a" class="kbd uppercase">a</kbd>
+            <kbd id="s" class="kbd uppercase">s</kbd>
+            <kbd id="d" class="kbd uppercase">d</kbd>
+            <kbd id="f" class="kbd uppercase">f</kbd>
+            <kbd id="g" class="kbd uppercase">g</kbd>
+            <kbd id="h" class="kbd uppercase">h</kbd>
+            <kbd id="j" class="kbd uppercase">j</kbd>
+            <kbd id="k" class="kbd uppercase">k</kbd>
+            <kbd id="l" class="kbd uppercase">l</kbd>
           </div>
           <div class="flex justify-center gap-1 my-1 w-full">
-            <kbd class="kbd">z</kbd>
-            <kbd class="kbd">x</kbd>
-            <kbd class="kbd">c</kbd>
-            <kbd class="kbd">v</kbd>
-            <kbd class="kbd">b</kbd>
-            <kbd class="kbd">n</kbd>
-            <kbd class="kbd">m</kbd>
-            <kbd class="kbd">/</kbd>
+            <kbd id="z" class="kbd uppercase">z</kbd>
+            <kbd id="x" class="kbd uppercase">x</kbd>
+            <kbd id="c" class="kbd uppercase">c</kbd>
+            <kbd id="v" class="kbd uppercase">v</kbd>
+            <kbd id="b" class="kbd uppercase">b</kbd>
+            <kbd id="n" class="kbd uppercase">n</kbd>
+            <kbd id="m" class="kbd uppercase">m</kbd>
+            <kbd id="/" class="kbd uppercase">/</kbd>
           </div>
          </div>
          <!-- Button -->
@@ -105,5 +105,7 @@
         </div>
       </section>
     </main>
+    <script src="script/utility.js"></script>
+    <script src="script/alpha-clash.js"></script>
   </body>
 </html>
