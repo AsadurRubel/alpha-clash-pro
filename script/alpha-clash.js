@@ -33,7 +33,7 @@ if(playerPressed === 'Escape'){
   if (playerPressed === expectedAlphabet) {
     console.log('you get a point');
 
-    audio.src = "../audio/success.mp3"
+    audio.src = "audio/success.mp3"
     audio.play();
 
     // Update Score
@@ -59,7 +59,7 @@ if(playerPressed === 'Escape'){
   else{
     console.log('you loss a life');  
 
-    audio.src = "../audio/wrong.mp3"
+    audio.src = "audio/wrong.mp3"
     audio.play();
 
     const currentLife = getTextElementValueById('current-life');
