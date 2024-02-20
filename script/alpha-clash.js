@@ -68,6 +68,8 @@ if(playerPressed === 'Escape'){
  
         if(updatedLife === 0){
             gameOver();
+            audio.src = "audio/claps.mp3"
+            audio.play();
         }
 
 // step-1: get the current life number
