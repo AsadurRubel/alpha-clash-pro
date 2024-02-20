@@ -10,7 +10,11 @@
 //     playGroundSection.classList.remove('hidden');
 // }
 
+const audio = new Audio();
+isGamePlayOn = false;
 function handleKeyBoarddKeyUpEvent(event){
+  if(isGamePlayOn == false) 
+  return;
   const playerPressed = event.key;
   console.log("player pressed", playerPressed);
 
@@ -28,6 +32,10 @@ if(playerPressed === 'Escape'){
   // check right or wrong key press
   if (playerPressed === expectedAlphabet) {
     console.log('you get a point');
+
+    audio.src = "../audio/success.mp3"
+    audio.play();
+
     // Update Score
     // 1. get the current score
     const currentScore = getTextElementValueById('current-score');
@@ -50,6 +58,10 @@ if(playerPressed === 'Escape'){
   }
   else{
     console.log('you loss a life');  
+
+    audio.src = "../audio/wrong.mp3"
+    audio.play();
+
     const currentLife = getTextElementValueById('current-life');
         const updatedLife = currentLife - 1;
         setTextElementValueById('current-life', updatedLife);
@@ -97,10 +109,12 @@ function play() {
     setTextElementValueById('current-life', 5);
     setTextElementValueById('current-score', 0);
 
+    isGamePlayOn = true;
     continueGame();
 }
 
 function gameOver(){
+  isGamePlayOn = false;
     hideElementById('play-ground');
     showElementById('final-score');
     // update final score
